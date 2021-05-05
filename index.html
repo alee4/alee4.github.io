@@ -8,13 +8,26 @@
   <meta name="description" content="Music in New Orleans Final Project">
   <meta name="author" content="Austin Lee">
   <link rel="stylesheet" href="css/style.css?v=1.0">
+
+
+  <link rel="stylesheet" href="flexslider.css" type="text/css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+  <script src="jquery.flexslider.js"></script>
+
+  <script type="text/javascript" charset="utf-8">
+    $(window).load(function() {
+      $('.flexslider').flexslider();
+    });
+  </script>
+  </script>
+
 </head>
 
 <body>
 
   <nav>
     <ul class="nav_links">
-      <li><a href="#">Home</a></li>
+      <li><a href="index.html">Home</a></li>
       <li><a href="#">History</a></li>
       <li><a href="#">Instruments</a></li>
       <li><a href="#">Music</a></li>
@@ -23,7 +36,19 @@
     </ul>
   </nav>
 
-
+  <div class="flexslider">
+    <ul class="slides">
+      <li>
+        <img src="images/slide1.jpg" />
+      </li>
+      <li>
+        <img src="images/slide2.jpg" />
+      </li>
+      <li>
+        <img src="images/slide3.png" />
+      </li>
+    </ul>
+  </div>
 
 </body>
 
