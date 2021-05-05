@@ -7,8 +7,8 @@
   <title>Traditional Jazz in New Orleans</title>
   <meta name="description" content="Music in New Orleans Final Project">
   <meta name="author" content="Austin Lee">
-  <link rel="stylesheet" href="css/style.css?v=1.0">
-
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/style.css">
 
 </head>
 
@@ -25,35 +25,16 @@
     </ul>
   </nav>
 
-<div class="slideshow-container">
-  <img class="mySlides" src="images/slide1.jpg">
-  <img class="mySlides" src="images/slide2.jpg">
-  <img class="mySlides" src="images/slide3.png">
+<div id="slider">
+  <figure>
+    <img src="images/desk.png">
+    <img src="images/desk2.png">
+    <img src="images/desk.png">
+    <img src="images/desk3.png">
+    <img src="images/desk.png">
+  </figure>
 
-  <button class="w3-button w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
-  <button class="w3-button w3-display-right" onclick="plusDivs(+1)">&#10095;</button>
 </div>
-
-<script>
-var slideIndex = 1;
-showDivs(slideIndex);
-
-function plusDivs(n) {
-  showDivs(slideIndex += n);
-}
-
-function showDivs(n) {
-  var i;
-  var x = document.getElementsByClassName("mySlides");
-  if (n > x.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = x.length} ;
-  for (i = 0; i < x.length; i++) {
-    x[i].style.display = "none";
-  }
-  x[slideIndex-1].style.display = "block";
-}
-</script>
-
 
 </body>
 
