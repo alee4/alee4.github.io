@@ -10,17 +10,6 @@
   <link rel="stylesheet" href="css/style.css?v=1.0">
 
 
-  <link rel="stylesheet" href="flexslider.css" type="text/css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
-  <script src="jquery.flexslider.js"></script>
-
-  <script type="text/javascript" charset="utf-8">
-    $(window).load(function() {
-      $('.flexslider').flexslider();
-    });
-  </script>
-  </script>
-
 </head>
 
 <body>
@@ -36,19 +25,35 @@
     </ul>
   </nav>
 
-  <div class="flexslider">
-    <ul class="slides">
-      <li>
-        <img src="images/slide1.jpg" />
-      </li>
-      <li>
-        <img src="images/slide2.jpg" />
-      </li>
-      <li>
-        <img src="images/slide3.png" />
-      </li>
-    </ul>
-  </div>
+<div class="slideshow-container">
+  <img class="mySlides" src="images/slide1.jpg">
+  <img class="mySlides" src="images/slide2.jpg">
+  <img class="mySlides" src="images/slide3.png">
+
+  <button class="w3-button w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+  <button class="w3-button w3-display-right" onclick="plusDivs(+1)">&#10095;</button>
+</div>
+
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length} ;
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  x[slideIndex-1].style.display = "block";
+}
+</script>
+
 
 </body>
 
