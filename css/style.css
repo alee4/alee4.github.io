@@ -4,10 +4,11 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-
 }
-body{
+
+body {
   background-color: #d1e0e0 !important;
+  position: relative;
 }
 
 /*==========Nav Bar============*/
@@ -16,8 +17,6 @@ body{
   position: relative;
   background-color: #333;
   overflow: hidden;
-
-
 }
 
 /* Style the links inside the navigation bar */
@@ -44,13 +43,20 @@ body{
   background-color: #6495ED;
   color: white;
 }
-/* ===========cirlce images================*/
-#circle-images img{
-  border: 5px solid #555;
-  margin-top: 60px;
-  border-radius: 50%;
 
-/*center images*/
+/* ===========cirlce images================*/
+.images-box {
+  position: absolute;
+  overflow: hidden;
+  width: 100%;
+}
+
+#circle-images img {
+  border: 5px solid #555;
+  margin-top: 15x;
+  margin-bottom: auto;
+  border-radius: 50%;
+  /*center images*/
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -65,13 +71,104 @@ body{
   padding: 5px;
 }
 
+.text-center {
+  padding: auto;
+}
+
 /* footer */
-.footer {
-   align-items: bottom;
-   left: 0;
-   bottom: 0;
-   width: 100%;
-   background-color: red;
-   color: white;
-   text-align: center;
+footer {
+  position: relative;
+  bottom: 0;
+  background: #333;
+  height: auto;
+  width: 100%;
+  font-family: "Open Sans";
+  padding-top: 10px;
+  color: #fff;
+}
+
+.footer-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.footer-content h3 {
+  font-size: 20px;
+  font-weight: 400;
+  text-transform: capitalize;
+  line-height: 30px;
+  margin: auto;
+}
+
+.socials {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px 0 30px 0;
+}
+
+.socials li {
+  margin: 0 20px;
+}
+
+.socials a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.socials a i {
+  font-size: 25px;
+  transition: color .4s ease;
+}
+
+.socials a:hover i {
+  color: #6495ED;
+}
+
+.footer-bottom {
+  background: #000;
+  width: 100vw;
+  padding: 10px 0;
+  text-align: center;
+}
+
+.footer-bottom p {
+  font-size: 14px;
+  word-spacing: 2px;
+  text-transform: capitalize;
+}
+
+.footer-bottom span {
+  text-transform: uppercase;
+  opacity: .4;
+  font-weight: 200;
+}
+
+/* deviders */
+.wrapper{
+  position: relative;
+	padding-bottom: 20px;
+}
+
+.divider
+{
+	position: relative;
+	margin-top: 30px;
+	height: 1px;
+}
+
+.div-transparent:before
+{
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 5%;
+	right: 5%;
+	width: 90%;
+	height: 1px;
+	background-image: linear-gradient(to right, transparent, rgb(48,49,51), transparent);
 }
