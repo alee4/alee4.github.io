@@ -9,6 +9,7 @@
 body {
   background-color: #d1e0e0 !important;
   position: relative;
+  height: 100%;
 }
 
 /*==========Nav Bar============*/
@@ -76,9 +77,14 @@ body {
 }
 
 /* footer */
+.footer-container {
+  position: relative;
+}
+
 footer {
-  position: static;
-  bottom: 0;
+  position: relative;
+  top:
+    bottom: 0px;
   background: #333;
   height: auto;
   width: 100%;
@@ -149,26 +155,81 @@ footer {
 }
 
 /* deviders */
-.wrapper{
+.wrapper {
   position: relative;
-	padding-bottom: 20px;
+  padding-bottom: 20px;
 }
 
-.divider
-{
-	position: relative;
-	margin-top: 30px;
-	height: 1px;
+.divider {
+  position: relative;
+  margin-top: 30px;
+  height: 1px;
 }
 
-.div-transparent:before
-{
-	content: "";
-	position: absolute;
-	top: 0;
-	left: 5%;
-	right: 5%;
-	width: 90%;
-	height: 1px;
-	background-image: linear-gradient(to right, transparent, rgb(48,49,51), transparent);
+.div-transparent:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 5%;
+  right: 5%;
+  width: 90%;
+  height: 1px;
+  background-image: linear-gradient(to right, transparent, rgb(48, 49, 51), transparent);
+}
+
+/* css for images on history page and instruments page */
+.left-container {
+  /* margin: auto; */
+  /* width: 50%; */
+  /* background-color: green; */
+  display: block;
+  text-align: center;
+}
+
+.left-container-image {
+  /* display: inline-block; */
+  vertical-align: top;
+  width: 50%;
+  max-width: 500px;
+  max-height: 500px;
+  margin-left: 50px;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  margin-right: 20px;
+  left: 50%;
+}
+
+.left-container-text {
+  display: inline-block;
+  /* background-color: white; */
+  width: 30%;
+
+}
+
+.right-container {
+  /* margin: auto; */
+  /* width: 50%; */
+  /* background-color: pink; */
+  display: block;
+  text-align: center;
+}
+
+.right-container-image {
+  /* display: inline-block; */
+  vertical-align: top;
+  width: 50%;
+  max-width: 500px;
+  max-height: 500px;
+  margin-right: 50px;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  margin-left: 20px;
+  right: 50%;
+}
+
+.right-container-text {
+  display: inline-block;
+  /* background-color: white; */
+  width: 30%;
+
 }
