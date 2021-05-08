@@ -17,17 +17,26 @@
 <body>
   <!-- nav bar -->
   <nav class="topnav">
-    <a href="index.html">Home</a>
-    <a href="history.html">History</a>
-    <a href="instruments.html">Instruments</a>
-    <a href="music.html">Music</a>
-    <a class="active" href="quiz.html">Quiz</a>
-    <a href="about.html">About</a>
+    <div class="topnav-left">
+      <a href="index.html">Home</a>
+      <a href="history.html">History</a>
+      <a href="instruments.html">Instruments</a>
+      <a href="music.html">Music</a>
+      <a class="active" href="quiz.html">Quiz</a>
+      <a href="about.html">About</a>
+    </div>
+    <div class="topnav-right">
+      <a href="sources.html">Sources</a>
+    </div>
   </nav>
 
-quiz page is under construction....
+<div class="quiz-container">
+  <div id="quiz"></div>
+  <button id="submit">Submit Quiz</button>
+  <div id="results"></div>
+</div>
 
-
+<script type="text/javascript" src="quiz.js"></script>
 
 <!-- Footer -->
 <footer>
