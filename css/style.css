@@ -85,6 +85,11 @@ body {
 
 .text-center {
   padding: auto;
+  margin-left: 40px;
+  margin-right: 40px;
+  margin-bottom: 40px;
+  margin-top: 20px;
+  font-size: x-large;
 }
 
 /* footer */
@@ -211,7 +216,7 @@ footer {
 
 .left-container-text {
   display: inline-block;
-  /* background-color: white; */
+  font-size: medium;
   width: 30%;
 }
 
@@ -238,7 +243,7 @@ footer {
 
 .right-container-text {
   display: inline-block;
-  /* background-color: white; */
+  font-size: medium;
   width: 30%;
 }
 
@@ -296,4 +301,12 @@ footer {
   margin-right: auto;
   margin-top: 100px;
   margin-bottom: 500px
+}
+
+/* instruments image gallery */
+.instruments-gallery{
+  text-align: center;
+  width: 10px;
+  height: 10px;
+width: 50%;
 }
