@@ -1,21 +1,48 @@
 var myQuestions = [
 {
-  question: "What is 10/2?",
+  question: "What is a break?",
   answers: {
-    a: '3',
-    b: '5',
-    c: '115'
+    a: 'A break is when all instruments stop and then one instrument plays a solo to fill the silence. ',
+    b: 'A break is when all instruments stop and no one plays.',
+    c: 'A break is when one instrument plays a solo and the other instruments provide back up. '
+  },
+  correctAnswer: 'a'
+},
+{
+  question: "What does the developmental “Generational” Theory state?",
+  answers: {
+    a: 'The older generation’s interest in Traditional Jazz caused it to dramatically rise in popularity.',
+    b: 'Younger audiences combined with the New Orleans’ party culture gave helped increase Traditional Jazz’s popularity.',
+    c: 'Both generations disliked Traditional Jazz so it was never able to become popular.'
   },
   correctAnswer: 'b'
 },
 {
-  question: "What is 30/3?",
+  question: "What is a song that musician King Oliver wrote?",
   answers: {
-    a: '3',
-    b: '5',
-    c: '10'
+    a: 'Doctor Jazz',
+    b: 'What a Wonderful World',
+    c: 'All Blues'
+  },
+  correctAnswer: 'a'
+},
+{
+  question: "Of these options, which instrument is considered a Front Line Instrument?",
+  answers: {
+    a: 'Tuba',
+    b: 'Violin',
+    c: 'Trombone'
   },
   correctAnswer: 'c'
+},
+{
+  question: "What is collective Improvisation?",
+  answers: {
+    a: 'Collective improvisation is playing music made on the spot as a band.',
+    b: 'Collective improvisation is playing pre-arranged music as a band.',
+    c: 'Collective improvisation is the band all swapping instruments and playing them for the first time.'
+  },
+  correctAnswer: 'a'
 }
 ];
 
@@ -84,7 +111,7 @@ function showResults(questions, quizContainer, resultsContainer){
       numCorrect++;
 
       // color the answers green
-      answerContainers[i].style.color = 'lightgreen';
+      answerContainers[i].style.color = 'green';
     }
     // if answer is wrong or blank
     else{
